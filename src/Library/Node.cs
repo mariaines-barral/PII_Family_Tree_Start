@@ -33,5 +33,20 @@ namespace Library
         {
             this.children.Add(element);
         }
+
+        public int AcceptAgeSumVisitor(Visitor visitor, Node<Person> person)
+        {
+            return visitor.AgeSum(person);
+        }
+
+        public int AcceptEldestChildVisitor(Visitor visitor, Node<Person> person)
+        {
+            return visitor.EldestChild(person);
+        }
+        
+        public string AcceptLongestNameVisitor(Visitor visitor, Node<Person> person)
+        {
+            return visitor.LongestName(person);
+        }
     }
 }
