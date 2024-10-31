@@ -10,7 +10,7 @@ namespace Library
 
         private List<Node<T>> children = new List<Node<T>>();
 
-        public T Number {
+        public T Element {
             get
             {
                 return this.element;
